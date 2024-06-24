@@ -1,0 +1,88 @@
+---
+layout: base
+---
+
+<div class="main-page">
+  <section class="about-author dimmed">
+    <p>
+      I make projects which help developers to build awesome things.
+      I adore learning more about infosec &amp; austrian economics.
+    </p>
+    <p>
+      Check out my <a href="https://github.com/paulmillr">github</a>,
+      ping me on
+      <a href="https://twitter.com/paulmillr">twitter</a>, <a href="https://paulmillr.com/apps/nostr/#/user/npub10jcnehsxwrjepupvh602pl83up0dh3wv3fqfwv062smygqvpeuwsk03kag">nostr</a>
+      or send me
+      <a href="mailto:&#112;&#97;&#117;&#108;&#43;&#115;&#105;&#116;&#101;&#64;&#112;&#97;&#117;&#108;&#109;&#105;&#108;&#108;&#114;&#46;&#99;&#111;&#109;">an email</a>.
+
+      My PGP is <a href="https://paulmillr.com/pgp_proof.txt">697079DA6878B89B</a>.
+
+      You could fund my work with <a href="/funding">sponsorship</a>.
+    </p>
+  </section>
+
+  <section>
+    <h2>Creating</h2>
+    <ul class="projects">
+      <li>
+        <a href="./noble/"><strong>noble</strong></a>
+        0-dependency cryptography:
+        <a href="https://github.com/paulmillr/noble-ciphers/">ciphers</a>,
+        <a href="https://github.com/paulmillr/noble-curves/">curves</a>,
+        <a href="https://github.com/paulmillr/noble-hashes/">hashes</a>,
+        <a href="https://github.com/paulmillr/noble-post-quantum/">post-quantum</a>
+      </li>
+      <li>
+        <a href="./noble/#scure"><strong>scure</strong></a> audited micro-libraries:
+        <a href="https://github.com/paulmillr/scure-base">base</a>,
+        <a href="https://github.com/paulmillr/scure-bip32">bip32</a>,
+        <a href="https://github.com/paulmillr/scure-bip39">bip39</a>,
+        <a href="https://github.com/paulmillr/scure-btc-signer">btc-signer</a>,
+        <a href="https://github.com/paulmillr/scure-starknet">starknet</a>
+      </li>
+      <li>
+        finance:
+          <a href="https://github.com/paulmillr/micro-eth-signer">eth-signer</a>,
+          <a href="https://github.com/paulmillr/micro-sol-signer">sol-signer</a>,
+          <a href="https://github.com/paulmillr/micro-ordinals">ordinals</a>,
+      </li>
+      <li>
+        security:
+          <a href="https://github.com/paulmillr/micro-key-producer">key-producer</a>,
+          <a href="https://github.com/paulmillr/nip44">nip44</a>,
+          <a href="https://github.com/paulmillr/encrypted-dns">encrypted-dns</a>
+      </li>
+      <li>
+        others:
+        <a href="https://github.com/paulmillr/chokidar">chokidar</a>,
+        <a href="https://github.com/paulmillr/dotfiles">dotfiles</a>,
+        <a href="https://github.com/paulmillr/micro-packed">packed</a>,
+        <a href="https://github.com/paulmillr/micro-ftch">micro-ftch</a>,
+        <a href="https://github.com/paulmillr/qr">qr</a>,
+        <a href="https://github.com/brunch/brunch">brunch</a>,
+        <a href="https://github.com/paulmillr/es6-shim">es6-shim</a>
+      </li>
+      <li>
+      web apps:
+      <a href="/apps/nostr/">nostr.spa</a>,
+      <a href="/apps/qr/">scan QR in pure JS</a>,
+      <a href="/apps/steg/">steganography</a>,
+      <a href="/noble/#demo">ECC calculator</a>
+      </li>
+    </ul>
+
+    Signed backups: <a href="https://github.com/paulmillr/backup">github</a>, <a href="https://gitlab.com/paulmillr/backup">gitlab</a>.
+  </section>
+
+  <section>
+    <h2>Writing</h2>
+    <ul class="post-list">
+      {% for post in site.posts %}
+      <li>
+        <time class="post-date dimmed" datetime="{{ post.date | date: "%Y-%m-%d" }}" data-mo="{{ post.date | date: "%b %Y" }}">{{ post.date | date: "%Y" }}</time> <span class="post-arrow dimmed">»</span>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>
