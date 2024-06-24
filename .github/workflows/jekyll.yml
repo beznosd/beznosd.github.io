@@ -49,14 +49,14 @@ jobs:
         run: cd apps/nostr && npm install && npm run build
       - name: Copy Nostr dist to _site
         run: cp -r apps/nostr/dist _site/apps/nostr
-      - name: QR App copy index.html
-        run: cp apps/qr/index.html _site/apps/qr/index.html
       - name: QR App copy paulmillr-qr.js
         run: cp apps/qr/paulmillr-qr.js _site/apps/qr/paulmillr-qr.js
       - name: QR App copy qr-web-demo.js
         run: cp apps/qr/qr-web-demo.js _site/apps/qr/qr-web-demo.js
       - name: QR App copy qr-web-demo.css
         run: cp apps/qr/qr-web-demo.css _site/apps/qr/qr-web-demo.css
+      - name: QR App copy index.html
+        run: cp apps/qr/index.html _site/apps/qr/index.html
       # - name: Setup QR app
       #   run: cd apps/qr && npm install && npm run build
       # - name: Copy QR dist to _site
